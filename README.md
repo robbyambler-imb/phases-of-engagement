@@ -26,6 +26,7 @@ Logic the model calls to reason about a specific context:
 
 | Tool | Description |
 |---|---|
+| `conduct_phase_interview` | Interview engine — tracks criteria status across all 7 phase boundaries, identifies the ambiguous boundary, and returns targeted questions to resolve it |
 | `assess_phase` | Walk the sequential decision tree to determine a people group's current phase |
 | `get_accelerators_for_phase` | Phase-specific accelerator questions with Foundations guardrails applied |
 | `get_transition_criteria` | What it would take to move to the next phase |
@@ -38,7 +39,7 @@ Pre-built, framework-aware templates:
 
 | Prompt | Description |
 |---|---|
-| `phase-assessment-interview` | Structured conversation to assess a people group's phase |
+| `phase-assessment-interview` | Conversational interview agent — opens wide, uses `conduct_phase_interview` in a loop to probe ambiguous boundaries, delivers a full phase assessment with Missionary Task focus and accelerator priorities |
 | `accelerator-planning-session` | Facilitated team diagnostic with guardrails applied |
 | `field-briefing` | Phase-specific briefing for field teams, mobilizers, or sending churches |
 | `training-module-outline` | Training outline for any framework topic and audience |
