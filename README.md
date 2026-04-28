@@ -63,7 +63,34 @@ This server integrates two documents:
 
 ## Getting Started
 
-### Connect to Claude Desktop
+### Connect via Hosted Server (recommended)
+
+The server is live at:
+```
+https://phases-of-engagement-production.up.railway.app
+```
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "phases-of-engagement": {
+      "type": "streamable-http",
+      "url": "https://phases-of-engagement-production.up.railway.app/mcp"
+    }
+  }
+}
+```
+
+Restart Claude Desktop — no cloning or local setup required.
+
+### Run Locally (Claude Desktop, local build)
+
+```bash
+npm install
+npm run build
+```
 
 Add to your `claude_desktop_config.json`:
 
@@ -78,18 +105,16 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-### Run Locally
-
-```bash
-npm install
-npm run build
-npm start
-```
-
 ### Development
 
 ```bash
 npm run dev
+```
+
+### Health Check
+
+```
+GET https://phases-of-engagement-production.up.railway.app/health
 ```
 
 ---
