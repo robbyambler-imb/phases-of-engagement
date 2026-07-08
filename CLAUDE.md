@@ -17,8 +17,8 @@ Claude operates as a domain-aware collaborator who understands both the technica
 
 - **Runtime:** Node.js / TypeScript (MCP server)
 - **Protocol:** Model Context Protocol (MCP)
-- **Docs source:** `/docs/` — PDFs (Toolkit, Foundations, Color Codes, Phases Final)
-- **Missiological frameworks:** Phases of Engagement Toolkit (040626), IMB Foundations 2022
+- **Docs source:** `/docs/` — PDFs (Toolkit, Foundations, Color Codes)
+- **Missiological frameworks:** Phases of Engagement Toolkit (July 2026), IMB Foundations 2022
 - **Target consumers:** Field teams, mobilizers, researchers, training content creators
 
 ---
@@ -29,9 +29,8 @@ Claude operates as a domain-aware collaborator who understands both the technica
 /phases
 ├── CLAUDE.md
 ├── docs/
-│   ├── The Phases of Engagement Toolkit - 040626.pdf   # Primary framework doc
+│   ├── Engagement-Phases-Toolkit-July2026.pdf          # Primary framework doc (canonical)
 │   ├── Foundations-2022-English.pdf                    # Theological guardrails (IMB)
-│   ├── Phases Final NEW v2.pdf                         # Draft visuals
 │   └── Color Codes.pdf                                 # Visual system
 └── (MCP server source — TBD)
 ```

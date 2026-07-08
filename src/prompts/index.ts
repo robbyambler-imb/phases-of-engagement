@@ -89,6 +89,7 @@ export function registerPrompts(server: McpServer) {
               `2. Apply the relevant Foundations guardrail`,
               `3. Note whether this is primarily an outside-worker or local-believer action at Phase ${phase}`,
               `4. Help us identify a specific, small, culturally appropriate next step`,
+              `5. Close by prompting the team to note what they learned and any phase-shift signals (new baptisms, new groups, leaders emerging), and to share relevant updates with their network and the Mission Information Community.`,
               ``,
               `Keep the session prayerful and discerning — not a checklist exercise.`,
             ]
