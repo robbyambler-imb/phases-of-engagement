@@ -108,6 +108,25 @@ Diagnostic domains that apply across all phases but require different approaches
 
 ---
 
+## Phase Colors — Use in All Output
+
+Whenever producing documents, visuals, slides, charts, or site/UI work for this project, color Phases 0–7 with the official palette from `docs/Color Codes.pdf` (also in `src/data/phases.ts`). Don't substitute other colors for phases.
+
+| Phase | Hex |
+|---|---|
+| 0 | #A2170D |
+| 1 | #EE4715 |
+| 2 | #F3751B |
+| 3 | #F2B321 |
+| 4 | #EFD348 |
+| 5 | #B8C94E |
+| 6 | #6BA529 |
+| 7 | #255013 |
+
+Phase 0-R has no assigned color in the PDF — ask before inventing one.
+
+---
+
 ## Current Focus
 
 - [ ] Define MCP server scope: what tools/resources/prompts will it expose?

@@ -108,6 +108,7 @@ export function registerTools(server: McpServer) {
               `## Phase Assessment Result`,
               ``,
               `**Determined Phase:** ${phase?.label ?? finalPhase}`,
+              phase?.color ? `**Phase Color:** ${phase.color}` : "",
               ``,
               `**Description:** ${phase?.description}`,
               ``,
@@ -196,6 +197,7 @@ export function registerTools(server: McpServer) {
             type: "text" as const,
             text: [
               `## Accelerators for ${phaseData.label}`,
+              phaseData.color ? `**Phase Color:** ${phaseData.color}` : "",
               ``,
               agentNote,
               ``,

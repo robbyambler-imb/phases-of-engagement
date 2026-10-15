@@ -4,6 +4,7 @@ export interface Phase {
   id: PhaseId;
   name: string;
   label: string;
+  color?: string; // hex from docs/Color Codes.pdf; 0-R has no assigned color
   description: string;
   markers: string[];
   primaryAgent: "outside" | "local" | "transitioning";
@@ -19,6 +20,7 @@ export const phases: Phase[] = [
     id: "0",
     name: "Waiting",
     label: "Phase 0 – Waiting",
+    color: "#A2170D",
     description:
       "There is no known reported engagement to establish self-sustaining churches among this people group.",
     markers: [
@@ -80,6 +82,7 @@ export const phases: Phase[] = [
     id: "1",
     name: "Entry",
     label: "Phase 1 – Entry",
+    color: "#EE4715",
     description:
       "Workers or near-culture believers gain access to the people group and begin laying relational foundations to share Christ and plant churches. The focus is on connecting, learning, and building bridges.",
     markers: [
@@ -117,6 +120,7 @@ export const phases: Phase[] = [
     id: "2",
     name: "Evangelism",
     label: "Phase 2 – Evangelism",
+    color: "#F3751B",
     description:
       "Regular, culturally relevant gospel engagement is taking place, with the intention of planting self-sustaining churches.",
     markers: [
@@ -156,6 +160,7 @@ export const phases: Phase[] = [
     id: "3",
     name: "Discipleship",
     label: "Phase 3 – Discipleship",
+    color: "#F2B321",
     description:
       "Individuals or small clusters have responded in repentance and faith. Early discipleship stresses obedience to Scripture, laying foundations for self-sustaining churches consistent with evangelical faith and practice.",
     markers: [
@@ -195,6 +200,7 @@ export const phases: Phase[] = [
     id: "4",
     name: "Local Church",
     label: "Phase 4 – Local Church",
+    color: "#EFD348",
     description:
       "Believers from the people group gather regularly, functioning as a local church consistent with evangelical faith and practice. Leaders from the people group are emerging among these churches.",
     markers: [
@@ -234,6 +240,7 @@ export const phases: Phase[] = [
     id: "5",
     name: "Reproducing Church",
     label: "Phase 5 – Reproducing Church",
+    color: "#B8C94E",
     description:
       "Churches from the people group are sending out evangelists or church planters to plant new churches among their own people. Second-generation groups and churches are forming.",
     markers: [
@@ -273,6 +280,7 @@ export const phases: Phase[] = [
     id: "6",
     name: "Multiplying Church",
     label: "Phase 6 – Multiplying Church",
+    color: "#6BA529",
     description:
       "Generational church streams spread across the people group, reaching 4th generation or beyond of both churches and leaders. Church network structures empower local oversight.",
     markers: [
@@ -311,6 +319,7 @@ export const phases: Phase[] = [
     id: "7",
     name: "Sustained Gospel Presence",
     label: "Phase 7 – Sustained Gospel Presence",
+    color: "#255013",
     description:
       "The people group has either (1) 10% or more following Christ and worshipping in churches, or (2) several multiplying church planting networks led by believers from the people group, who are sending workers to other people groups while continuing to mature at home.",
     markers: [
